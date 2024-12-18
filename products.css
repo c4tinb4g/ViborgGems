@@ -1,0 +1,96 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+  }
+  
+  /* Body Styling */
+  body {
+    background-color: #5c0b8a; /* Purple background */
+    color: white;
+    text-align: center;
+  }
+/* Container */
+.container {
+    padding: 20px;
+  }
+/* Header */
+header {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    background-color: #F97316;
+    padding: 10px;
+    font-size: 2rem;
+    position: relative;
+}
+/*HEADLINE*/
+h1 {
+    font-size: 50px;
+    margin: 10px;
+}
+
+/* Force the image to a specific size */
+.home-logo {
+    display: flex;
+    align-items: center;
+    width: 100px; /* Set a smaller width */
+    height: 100px; /* Set a smaller height */
+    object-fit: contain; /* Ensures the image fits within the defined dimensions */
+}
+
+
+
+/* Main Sections */
+main {
+    padding: 100px;
+}
+
+.products, .events, .about {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content:space-around;
+    gap: 175px;
+}
+
+.product-item, .event-item {
+    background-color: #6200ea;
+    padding: 10px;
+    border-radius: 8px;
+    width: 200px;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* Quest Section */
+.quest {
+    background-color: #ff5722;
+    margin: 20px;
+    padding: 10px;
+    font-weight: bold;
+}
+
+/* Footer */
+footer {
+    margin-top: 100px;
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+}
+
+footer a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+.arrow-icon {
+    width: 70px; /* Adjust the size of the arrows */
+    height: auto; /* Maintain aspect ratio */
+    vertical-align: middle; /* Align icon with text */
+    margin: 0 5px; /* Add spacing between text and icon */
+}

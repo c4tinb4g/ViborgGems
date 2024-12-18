@@ -1,0 +1,115 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+  }
+  
+  /* Body Styling */
+  body {
+    background-color: #5c0b8a; /* Purple background */
+    color: white;
+    text-align: center;
+  }
+  
+  /* Container */
+  .container {
+    padding: 20px;
+  }
+  
+  /* Header */
+header {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    background-color: #F97316;
+    padding: 10px;
+    font-size: 2rem;
+    position: relative;
+}
+/*HEADLINE*/
+h1 {
+    font-size: 50px;
+    margin: 10px;
+}
+  /* Force the image to a specific size */
+.home-logo {
+    display: flex;
+    align-items: center;
+    width: 100px; /* Set a smaller width */
+    height: 100px; /* Set a smaller height */
+    object-fit: contain; /* Ensures the image fits within the defined dimensions */
+}
+  
+  /* Events Section */
+  .events {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin: 20px 0;
+  }
+  
+  .event {
+    background-color: #ffffff; /* White box */
+    color: #5c0b8a; /* Purple text */
+    border-radius: 10px;
+    overflow: hidden;
+    width: 30%;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+  }
+  
+  .event img {
+    width: 100%;
+    height: auto;
+    display: block;
+  }
+  
+  .event h2 {
+    padding: 10px;
+    font-size: 1.2rem;
+    font-weight: bold;
+  }
+  
+  /* Quest of the Day */
+  .quest {
+    background-color: #f27531; /* Orange background */
+    color: black;
+    padding: 10px 20px;
+    margin: 30px auto;
+    display: inline-block;
+    border-radius: 5px;
+    font-size: 1rem;
+    font-weight: bold;
+  }
+  
+/* Footer Styling */
+footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center; /* Vertically center content */
+    margin-top: 20px;
+    font-size: 1.2rem;
+  }
+  
+  /* Footer Links Styling */
+  .footer-link {
+    display: flex;
+    align-items: center; /* Align icon and text vertically */
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    gap: 8px; /* Add spacing between icon and text */
+  }
+  
+  /* Arrow Icon Styling */
+  .arrow-icon {
+    width: 70px; /* Adjust the arrow size */
+    height: auto;
+  }
+  
+  /* Hover Effect for Links */
+  .footer-link:hover {
+    text-decoration: underline;
+  }
+  

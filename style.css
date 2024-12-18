@@ -1,0 +1,116 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family:'Beautiful Freak Bold', Courier, monospace, sans-serif;
+}
+@font-face {
+    font-family: 'CustomFont'; /* Name your font family */
+    src: url('fonts/Its_me_Simon-Beautiful_Freak_Bold.otf'); /* Locate the .ttf file within your directory*/
+  }
+  
+  body {
+    font-family: 'CustomFont', sans-serif; /* Use the font family */
+  }
+body {
+    overflow: hidden;
+}
+
+/* Navigation Bar */
+nav {
+    background-color: #6B21A8;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 10px;
+    color: white;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+}
+
+nav ul li {
+    margin-left: 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: white;
+    font-size: 25px;
+    text-transform: uppercase;
+}
+
+.logo {
+    font-size: 5px;
+}
+
+/* Slider Styles */
+.slider {
+    display: flex;
+    width: 300vw; /* 3 slides, each 100vw wide */
+    transition: transform 0.5s ease-in-out;
+}
+
+.slide {
+    width: 100vw;
+    height: 100vh;
+    position: relative;
+    text-align: center;
+    color: #fff;
+    font-size: 70px;
+    font-weight: bold;
+    overflow: hidden;
+}
+
+.beer-bottle {
+    position: absolute;
+    top: 48%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    max-height: 800px;
+    z-index: 2;
+}
+
+.hops {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url('images/hops2.webp'); /* Image of hops */
+    background-size: 500px;
+    animation: hopsMove 10s linear infinite;
+}
+
+@keyframes hopsMove {
+    from {
+        background-position: 0 0;
+    }
+    to {
+        background-position: 100px 100px;
+    }
+}
+
+/* Navigation Arrows */
+.navigation {
+    position: absolute;
+    bottom: 15px;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 10;
+}
+
+.navigation button {
+    padding: 10px 20px;
+    margin: 0 10px;
+    border: none;
+    background-color: #6B21A8;
+    color: white;
+    cursor: pointer;
+    font-size: 25px;
+    border-radius: 5px;
+}
+

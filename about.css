@@ -1,0 +1,152 @@
+/* General Reset - Minimal */
+body, h1, h2, h3, p, a {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+  }
+  
+  /* Body */
+  body {
+    background-color: #5c0b8a; /* Purple background */
+    color: white;
+    line-height: 1.6;
+    text-align: center;
+    height: 100vh; /* Prevent scrolling */
+    overflow: hidden; /* Disable scrolling */
+    padding: 0;
+    margin: 0;
+  }
+  
+  /* Container */
+  .container {
+    padding: 20px;
+    position: relative; /* Contains absolutely positioned elements */
+    height: 100vh; /* Full screen height */
+  }
+  
+  /* Header Styling */
+  header {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start; /* Align items to the left */
+    gap: 10px;
+    background-color: #F97316;
+    padding: 10px;
+    font-size: 2rem;
+  }
+  
+  /* Headline Styling */
+  h1 {
+    font-size: 50px;
+    margin: 10px;
+    font-weight: bold;
+    text-transform: uppercase;
+  }
+  
+  /* About Content */
+  .about-content {
+    margin: 20px auto; /* Center content */
+    line-height: 1.8;
+    font-size: 1.1rem;
+    max-width: 800px;
+  }
+  
+  /* Find Us Section */
+  .find-us h2 {
+    margin: 20px 0;
+    font-size: 2rem;
+  }
+  
+  .find-us-options {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+  }
+  
+  .map-section, .social-media-section {
+    text-align: center;
+    width: 45%;
+  }
+  
+  .map-image {
+    width: 100%;
+    max-width: 300px;
+    margin-top: 10px;
+  }
+  
+  .social-icon {
+    width: 40px;
+    margin: 10px;
+  }
+  
+  /* Contact Email */
+  .contact-email {
+    text-align: center;
+    margin: 20px 0;
+  }
+  
+  .email-link {
+    color: orange;
+    text-decoration: none;
+    font-weight: bold;
+  }
+  
+  .email-link:hover {
+    text-decoration: underline;
+  }
+  
+  /* Footer */
+  footer {
+    position: absolute;
+    bottom: 10px;
+    left: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+  }
+  
+  footer a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+  }
+  
+  .arrow-icon {
+    width: 50px; /* Fixed arrow size */
+    height: auto;
+    vertical-align: middle;
+    margin-right: 5px;
+  }
+  
+  /* Decorative Bottle Image */
+  .bottle-image {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    height: 90vh; /* Dynamically scale */
+    max-height: 600px;
+    z-index: -1; /* Send the bottle to the back */
+  }
+  
+  /* Responsive Media Query */
+  @media (max-width: 768px) {
+    .find-us-options {
+      flex-direction: column; /* Stack map and social media vertically */
+      gap: 20px;
+    }
+  
+    .map-section, .social-media-section {
+      width: 100%;
+    }
+  
+    .bottle-image {
+      height: 50vh; /* Resize for smaller screens */
+      max-height: 300px;
+    }
+  
+    .arrow-icon {
+      width: 40px; /* Smaller arrows for small screens */
+    }
+  }
